@@ -12,8 +12,8 @@
  *
  *  Released under the MIT license License
  *
- *  About P3T1085:
- *    https://www.nxp.com/products/sensors/ic-digital-temperature-sensors/i3c-ic-bus-0-5-c-accurate-digital-temperature-sensor:P3T1085UK
+ *  About P3T1755:
+ *    https://www.nxp.com/products/sensors/i3c-ic-digital-temp-sensors/i3c-ic-bus-0-5-c-accurate-digital-temperature-sensor:P3T1755DP
  */
 
 #include <P3T1755.h>
