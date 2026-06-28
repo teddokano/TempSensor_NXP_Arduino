@@ -27,8 +27,8 @@ void LM75B::thresholds( float v0, float v1 )
 	float higher	= (v0 < v1) ? v1 : v0;
 	float lower		= (v0 < v1) ? v0 : v1;
 	
-	write_r16( Tos,   (uint16_t)((int16_t)(higher * 256.0)) & 0xFF80 );
-	write_r16( Thyst, (uint16_t)((int16_t)(lower  * 256.0)) & 0xFF80 );
+	write_r16( Tos,   (uint16_t)((int16_t)ceilf(higher * 256.0)) & 0xFF80 );
+	write_r16( Thyst, (uint16_t)((int16_t)floorf(lower  * 256.0)) & 0xFF80 );
 }
 
 void LM75B::os_mode( mode flag )
@@ -52,8 +52,8 @@ void P3T1755::thresholds( float v0, float v1 )
 	float higher	= (v0 < v1) ? v1 : v0;
 	float lower		= (v0 < v1) ? v0 : v1;
 	
-	write_r16( T_HIGH, (uint16_t)((int16_t)(higher * 256.0)) & 0xFFF0 );
-	write_r16( T_LOW,  (uint16_t)((int16_t)(lower  * 256.0)) & 0xFFF0 );
+	write_r16( T_HIGH, (uint16_t)((int16_t)ceilf(higher * 256.0)) & 0xFFF0 );
+	write_r16( T_LOW,  (uint16_t)((int16_t)floorf(lower  * 256.0)) & 0xFFF0 );
 }
 
 /* P3T1085 class ******************************************/
