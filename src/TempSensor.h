@@ -563,16 +563,16 @@ public:
 	
 	/** Create a P3T1035 instance connected to specified I2C pins with specified address
 	 *
-	 * @param i2c_address I2C-bus address (default: (0xE0>>1))
+	 * @param i2c_address I2C-bus address (default: (0xE4>>1))
 	 */
 	P3T1035( uint8_t i2c_address = (0xE4 >> 1) );
 
 	/** Create a P3T1035 instance connected to specified I2C pins with specified address
 	 *
 	 * @param wire TwoWire instance
-	 * @param i2c_address I2C-bus address (default: (0xE0>>1))
+	 * @param i2c_address I2C-bus address (default: (0xE4>>1))
 	 */
-	P3T1035( TwoWire& wire, uint8_t i2c_address = (0xE0 >> 1) );
+	P3T1035( TwoWire& wire, uint8_t i2c_address = (0xE4 >> 1) );
 
 	/** Destructor of P3T1035
 	 */
@@ -684,18 +684,18 @@ public:
 	
 	/** Create a P3T2030 instance connected to specified I2C pins with specified address
 	 *
-	 * @param i2c_address I2C-bus address (default: (0xE0>>1))
+	 * @param i2c_address I2C-bus address (default: (0xE4>>1))
 	 */
-	P3T2030( uint8_t i2c_address = (0xE0 >> 1) );
+	P3T2030( uint8_t i2c_address = (0xE4 >> 1) );
 
-	/** Create a P3T1035 instance connected to specified I2C pins with specified address
+	/** Create a P3T2030 instance connected to specified I2C pins with specified address
 	 *
 	 * @param wire TwoWire instance
-	 * @param i2c_address I2C-bus address (default: (0xE0>>1))
+	 * @param i2c_address I2C-bus address (default: (0xE4>>1))
 	 */
 	P3T2030( TwoWire& wire, uint8_t i2c_address = (0xE4 >> 1) );
 
-	/** Destructor of P3T1035
+	/** Destructor of P3T2030
 	 */
 	virtual ~P3T2030();
 	
